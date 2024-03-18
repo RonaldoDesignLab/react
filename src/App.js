@@ -35,9 +35,10 @@ const App = () =>{
         />
 
         <img
+          className="p-2 bg-slate-600 rounded-full hover:cursor-pointer "
           src={SearchIcon}
           alt="search"
-          width="20px"
+          width="40px"
           onClick={() => searchMovies(searchTerm)}
         />
       </div>
