@@ -2,7 +2,7 @@ import React from 'react';
 
 const MovieCard = ({ movie}) => {
     return(
-        <div className='movie bg-black rounded-lg hover:cursor-pointer hover:shadow-lg hover:bg-slate-900'>
+        <div className='movie bg-black rounded-lg hover:cursor-pointer hover:shadow-lg hover:bg-slate-900 hover:scale-105 ease-in-out duration-300'>
             <div>
             <p className='absolute bg-black/60 text-white p-2 rounded-br-lg rounded-tl-lg'> {movie.Year}</p>
             </div>
