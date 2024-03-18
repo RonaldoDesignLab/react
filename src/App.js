@@ -47,11 +47,14 @@ const App = () =>{
       
       {movies?.length > 0
         ? (
+          <>
+          <h3 className='text-white text-[32px] mb-3'>Popular Movies</h3>
           <div className='container grid grid-cols-4 gap-5'>
               {movies.map((movie) => (
                 <MovieCard movie={movie}/>
               ))}
           </div>
+          </>
         ) : (
           <div className='empty'>
             <h2>No movies Found</h2>
