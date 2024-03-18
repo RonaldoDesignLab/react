@@ -12,6 +12,8 @@ const App = () =>{
   const searchMovies = async (movie_name) => {
   const response = await fetch (`${API_URL}&s=${movie_name}`);
   const data = await response.json();
+  console.log(data.Search)
+  //cant import other details from this api imdb
   
     setMovies(data.Search);
   }
